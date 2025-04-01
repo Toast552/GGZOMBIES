@@ -22,7 +22,9 @@ A web-based multiplayer zombies game inspired by *Call of Duty: World at War*'s 
    - Open `http://localhost:3000` in multiple tabs.
 
 4. **Deploy**:
-   
+   - **Client (Vercel)**:
+     - Push to GitHub, import to Vercel.
+     - Set `NEXT_PUBLIC_WS_URL` env var (e.g., `wss://zombies-gg-server.herokuapp.com`).
    - **Server (Heroku)**:
      - Add `Procfile`: `web: npm start`
      - Deploy: `heroku create zombies-gg-server && git push heroku main`

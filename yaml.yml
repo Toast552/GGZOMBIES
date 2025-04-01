@@ -1,0 +1,12 @@
+yaml
+name: Deploy Client
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: cd client && npm install && npm run build
+      
